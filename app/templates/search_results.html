@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Polymer comparison</title>
+    <link rel="stylesheet" href="https://polymer.nims.go.jp/PoLyInfo/css/stylePoLyInfo.css" type="text/css">
+</head>
+<body>
+     <h1 align="center" class="matches">Comparison result</h1>
+<table cellpadding="4"  align="center" bgcolor="white">
+  <tr>
+      <td>
+        <button id="compare" type="submit" onclick="window.location.href='http://127.0.0.1:5000/search'" > Back to search page</button>
+      </td>
+  </tr>
+  <tr>
+    <td>
+        <iframe src="/static/img/render.html" height="500px" width="1000px" scrolling="no" > </iframe>
+    </td>
+  </tr>
+</table>
+
+<table cellpadding="4"  align="center" bgcolor="white">
+    <tr>
+    <td colspan="7" height="24"  >2D Structure</td>
+    {% for j in range(0,y) %}
+    <td><img border="0" src={{content3[j]}}> </td>
+    {% endfor %}
+    </tr>
+    <tr>
+    {% for i in range(0,x) %}
+    <td colspan="7" height="24"  bgcolor="white">{{content[i]}}&nbsp</td>
+    {% for j in range(0,y) %}
+    <td bgcolor="white" >{{content2[j][i]}}&nbsp</td>
+    {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

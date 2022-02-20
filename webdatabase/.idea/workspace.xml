@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e9fe319-fe4a-4c84-b581-819a4dac4837" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/templates/search.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/app.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1oC30kaImNLeW4SFsviBBkPyHXs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite&#10;sqlserver&#10;mysql.8&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pythonProject" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\webdatabase\app\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\webdatabase\app\templates\static" />
+      <recent name="F:\webdatabase\app\static" />
+      <recent name="F:\webdatabase\app\" />
+      <recent name="F:\webdatabase\app\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask 服务器.Flask (app/app.py)">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="webdatabase" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="webdatabase" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Dash" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Dash/excel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flaskr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="webdatabase" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/flaskr-master/flaskr-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:/flaskr-master/flaskr-master/flaskr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="webdatabase" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/users" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/users/forms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app/app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="webdatabase" />
+      <option name="target" value="F:\webdatabase\app\app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask 服务器.Flask (app/app.py)" />
+      <item itemvalue="Python.forms" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.flaskr" />
+      <item itemvalue="Python.excel" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask 服务器.Flask (app/app.py)" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.excel" />
+        <item itemvalue="Python.flaskr" />
+        <item itemvalue="Python.forms" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e9fe319-fe4a-4c84-b581-819a4dac4837" name="默认的" comment="" />
+      <created>1612776523687</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612776523687</updated>
+      <workItem from="1612776556630" duration="4685000" />
+      <workItem from="1612803424804" duration="1189000" />
+      <workItem from="1612835767530" duration="4544000" />
+      <workItem from="1612926125840" duration="3248000" />
+      <workItem from="1612967297594" duration="5598000" />
+      <workItem from="1613101853289" duration="19308000" />
+      <workItem from="1613198689461" duration="3124000" />
+      <workItem from="1613207875267" duration="685000" />
+      <workItem from="1613208603140" duration="18427000" />
+      <workItem from="1613265680802" duration="5523000" />
+      <workItem from="1613346770942" duration="2763000" />
+      <workItem from="1613353997202" duration="6087000" />
+      <workItem from="1613440571572" duration="9968000" />
+      <workItem from="1613464795585" duration="2359000" />
+      <workItem from="1613471846509" duration="1028000" />
+      <workItem from="1613473100580" duration="9966000" />
+      <workItem from="1613524682537" duration="6589000" />
+      <workItem from="1613559504464" duration="217000" />
+      <workItem from="1613575491845" duration="662000" />
+      <workItem from="1613612666621" duration="2041000" />
+      <workItem from="1613655668729" duration="847000" />
+      <workItem from="1613702338022" duration="4607000" />
+      <workItem from="1614060381338" duration="1340000" />
+      <workItem from="1614061978877" duration="2527000" />
+      <workItem from="1614354752064" duration="152000" />
+      <workItem from="1614579417304" duration="8893000" />
+      <workItem from="1614604740870" duration="10711000" />
+      <workItem from="1614649607474" duration="27223000" />
+      <workItem from="1614737008823" duration="11559000" />
+      <workItem from="1614765293777" duration="334000" />
+      <workItem from="1614787333779" duration="5176000" />
+      <workItem from="1614826599680" duration="10797000" />
+      <workItem from="1615041793702" duration="7000" />
+      <workItem from="1615863060381" duration="20517000" />
+      <workItem from="1615890544109" duration="38000" />
+      <workItem from="1615899357127" duration="14493000" />
+      <workItem from="1615944856536" duration="26850000" />
+      <workItem from="1616059954399" duration="6889000" />
+      <workItem from="1616072469676" duration="9650000" />
+      <workItem from="1616124321061" duration="7076000" />
+      <workItem from="1616220750977" duration="23392000" />
+      <workItem from="1616331879117" duration="46000" />
+      <workItem from="1616331948323" duration="534000" />
+      <workItem from="1616332577783" duration="488000" />
+      <workItem from="1616333652780" duration="213000" />
+      <workItem from="1616333881161" duration="138000" />
+      <workItem from="1616334031961" duration="35000" />
+      <workItem from="1616334081571" duration="75000" />
+      <workItem from="1616334171011" duration="5393000" />
+      <workItem from="1616382607534" duration="6297000" />
+      <workItem from="1616468843844" duration="11099000" />
+      <workItem from="1616491791071" duration="3000" />
+      <workItem from="1616493450608" duration="9000" />
+      <workItem from="1616494138807" duration="590000" />
+      <workItem from="1616563848493" duration="1244000" />
+      <workItem from="1617248847440" duration="593000" />
+      <workItem from="1617286551282" duration="3616000" />
+      <workItem from="1617439154934" duration="597000" />
+      <workItem from="1617439854892" duration="125000" />
+      <workItem from="1617439998034" duration="91000" />
+      <workItem from="1617440108412" duration="179000" />
+      <workItem from="1617440304223" duration="103000" />
+      <workItem from="1617440427586" duration="68000" />
+      <workItem from="1617453589245" duration="1510000" />
+      <workItem from="1617546283003" duration="4906000" />
+      <workItem from="1617586883916" duration="17942000" />
+      <workItem from="1617675329001" duration="10564000" />
+      <workItem from="1617864900436" duration="26099000" />
+      <workItem from="1617938535859" duration="19082000" />
+      <workItem from="1617978920163" duration="90000" />
+      <workItem from="1617979279270" duration="4000" />
+      <workItem from="1617979298943" duration="1765000" />
+      <workItem from="1617981110403" duration="946000" />
+      <workItem from="1617982083545" duration="216000" />
+      <workItem from="1617982315074" duration="8000" />
+      <workItem from="1617982338134" duration="200000" />
+      <workItem from="1617982585325" duration="43000" />
+      <workItem from="1617982650367" duration="200000" />
+      <workItem from="1617982867013" duration="39000" />
+      <workItem from="1617982925239" duration="556000" />
+      <workItem from="1617983543643" duration="50000" />
+      <workItem from="1617983652454" duration="625000" />
+      <workItem from="1617984345421" duration="20000" />
+      <workItem from="1617984380087" duration="13000" />
+      <workItem from="1617984539625" duration="1324000" />
+      <workItem from="1618023781262" duration="910000" />
+      <workItem from="1618041221021" duration="22000" />
+      <workItem from="1618041308888" duration="295000" />
+      <workItem from="1618042380416" duration="16792000" />
+      <workItem from="1618113136332" duration="10719000" />
+      <workItem from="1618194324726" duration="616000" />
+      <workItem from="1618236613019" duration="11290000" />
+      <workItem from="1618277012727" duration="6965000" />
+      <workItem from="1618383358412" duration="10649000" />
+      <workItem from="1618507117555" duration="634000" />
+      <workItem from="1618540614527" duration="542000" />
+      <workItem from="1618715279490" duration="4079000" />
+      <workItem from="1618731212625" duration="2284000" />
+      <workItem from="1619077108103" duration="432000" />
+      <workItem from="1619082588896" duration="3290000" />
+      <workItem from="1619093289073" duration="2241000" />
+      <workItem from="1619105644927" duration="3902000" />
+      <workItem from="1619159427859" duration="10089000" />
+      <workItem from="1619188259416" duration="2124000" />
+      <workItem from="1619255140861" duration="2049000" />
+      <workItem from="1619338900065" duration="4648000" />
+      <workItem from="1619414473657" duration="4165000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/webdatabase$Flask__app_app_py_.coverage" NAME="Flask (app/app.py) 覆盖结果" MODIFIED="1619422049240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/webdatabase$forms.coverage" NAME="forms 覆盖结果" MODIFIED="1613113580088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/users" />
+    <SUITE FILE_PATH="coverage/webdatabase$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1612879451707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/webdatabase$excel.coverage" NAME="excel 覆盖结果" MODIFIED="1613559245116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Dash" />
+    <SUITE FILE_PATH="coverage/webdatabase$flaskr.coverage" NAME="flaskr 覆盖结果" MODIFIED="1613207545426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/flaskr-master/flaskr-master" />
+    <SUITE FILE_PATH="coverage/webdatabase$app.coverage" NAME="app 覆盖结果" MODIFIED="1615900175814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+  </component>
+</project>

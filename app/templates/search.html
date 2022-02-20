@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Plotted data</title>
+</head>
+<body>
+<form action="/search_type" method="post">
+  <table cellpadding="3" cellspacing="0" align="center" width="960px">
+  <tbody>
+    <tr>
+      <td class="large_bold">
+        <table align="center">
+        <tbody>
+          <tr>
+            <td >
+              <img id="Mucsl-d" src="/static/img/Mucsl-d.png" width="150px" height="75px"/>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <table cellpadding="3" cellspacing="0" bgcolor="#fab27b" width="960px">
+        <tbody>
+          <tr>
+            <td class="condition_bg" height="25">
+              <table >
+              <tbody>
+                <tr>
+                  <td class="condition_noneborder_bg" width="230"><b>X</b>: Property</td>
+                  <td class="condition_noneborder_bg">
+                    <select id="x_axis" name="p_prop1_name"  onchange="change_1()">
+<optgroup label="Physical property">
+<option value="Density" selected="">Density</option>
+<option value="Specific volume">Specific volume</option>
+</optgroup>
+<optgroup label="Optical property">
+<option value="Refractive index">Refractive index</option>
+<option value="Stress-optical coefficient">Stress-optical coefficient</option>
+</optgroup>
+<optgroup label="Thermal property">
+<option value="Crystallization temp.">Crystallization temp.</option>
+<option value="Glass transition temp.">Glass transition temp.</option>
+<option value="Heat of crystallization">Heat of crystallization</option>
+<option value="Heat of fusion">Heat of fusion</option>
+<option value="Linear expansion coefficient">Linear expansion coefficient</option>
+<option value="Melting temp.">Melting temp.</option>
+<option value="Specific heat capacity (Cp)">Specific heat capacity (Cp)</option>
+<option value="Specific heat capacity (Cv)">Specific heat capacity (Cv)</option>
+<option value="Thermal conductivity">Thermal conductivity</option>
+<option value="Thermal decomposition">Thermal decomposition </option>
+<option value="Thermal diffusivity">Thermal diffusivity</option>
+<option value="Volume expansion coefficient">Volume expansion coefficient</option>
+</optgroup>
+<optgroup label="Physicochemical property">
+<option value="Contact angle">Contact angle</option>
+<option value="Gas diffusion coefficient (D)">Gas diffusion coefficient (D)</option>
+<option value="Gas permeability coefficient (P)">Gas permeability coefficient (P)</option>
+<option value="Gas solubility coefficient (S)">Gas solubility coefficient (S)</option>
+<option value="Hansen parameter delta-d(dispersive component)">Hansen parameter delta-d(dispersive component)</option>
+<option value="Hansen parameter delta-h(hydrogen bonding component)">Hansen parameter delta-h(hydrogen bonding component)</option>
+<option value="Hansen parameter delta-p(polar component)">Hansen parameter delta-p(polar component)</option>
+<option value="Interfacial tension">Interfacial tension</option>
+<option value="Solubility parameter">Solubility parameter</option>
+<option value="Surface tension">Surface tension</option>
+<option value="Water absorption">Water absorption</option>
+<option value="Water vapor transmission">Water vapor transmission</option>
+</optgroup>
+<optgroup label="Dilute solution property">
+<option value="Diffusion coefficient">Diffusion coefficient</option>
+<option value="Intrinsic viscosity [eta]">Intrinsic viscosity [eta]</option>
+<option value="Radius of gyration">Radius of gyration</option>
+<option value="Non solvent">Non solvent</option>
+<option value="Second virial coefficient">Second virial coefficient</option>
+<option value="Sedimentation coefficient">Sedimentation coefficient</option>
+</optgroup>
+<optgroup label="Tensile property">
+<option value="Dynamic tensile properties">Dynamic tensile properties</option>
+<option value="Elongation at break">Elongation at break</option>
+<option value="Elongation at yield">Elongation at yield</option>
+<option value="Fiber tensile modulus">Fiber tensile modulus</option>
+<option value="Fiber tensile stress (strength) at break">Fiber tensile stress(strength) at break</option>
+<option value="Tensile modulus">Tensile modulus</option>
+<option value="Tensile stress(strength) at break">Tensile stress(strength) at break</option>
+<option value="Tensile stress(strength) at yield">Tensile stress(strength) at yield</option>
+</optgroup>
+<optgroup label="Impact strength">
+<option value="Charpy impact">Charpy impact</option>
+<option value="Izod impact">Izod impact</option>
+</optgroup>
+<optgroup label="Hardness">
+<option value="Rockwell hardness">Rockwell hardness</option>
+<option value="Shore hardness">Shore hardness</option>
+</optgroup>
+<optgroup label="Electrical property">
+<option value="Dielectric breakdown voltage">Dielectric breakdown voltage</option>
+<option value="Dielectric const.(DC)">Dielectric const.(DC)</option>
+<option value="Dielectric dispersion">Dielectric dispersion</option>
+<option value="Electric conductivity">Electric conductivity</option>
+<option value="Surface resistivity">Surface resistivity</option>
+<option value="Volume resistivity">Volume resistivity</option>
+</optgroup>
+                    </select>
+                  </td>
+                  <td class="condition_noneborder_bg">Range</td>
+                  <td class="condition_noneborder_bg">&nbsp;&nbsp;min:</td>
+                  <td class="condition_noneborder_bg"><input id="p_prop1_min" name="p_prop1_min" onchange="change_property_1()"></td>
+                  <td class="condition_noneborder_bg">&nbsp;max:</td>
+                  <td class="condition_noneborder_bg"><input id="p_prop1_max" name="p_prop1_max" onchange="change_property_1()"></td>
+                </tr>
+              </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="condition_bg" height="25">
+              <table>
+              <tbody>
+                <tr>
+                  <td class="condition_noneborder_bg" width="230"><b>Y</b>: Property</td>
+                  <td class="condition_noneborder_bg">
+                    <select id="y_axis" name="p_prop2_name" onchange="change_2();">
+<optgroup label="Physical property">
+<option value="Density" >Density</option>
+<option value="Specific volume" selected="">Specific volume</option>
+</optgroup>
+<optgroup label="Optical property">
+<option value="Refractive index">Refractive index</option>
+<option value="Stress-optical coefficient">Stress-optical coefficient</option>
+</optgroup>
+<optgroup label="Thermal property">
+<option value="Crystallization temp.">Crystallization temp.</option>
+<option value="Glass transition temp.">Glass transition temp.</option>
+<option value="Heat of crystallization">Heat of crystallization</option>
+<option value="Heat of fusion">Heat of fusion</option>
+<option value="Linear expansion coefficient">Linear expansion coefficient</option>
+<option value="Melting temp.">Melting temp.</option>
+<option value="Specific heat capacity (Cp)">Specific heat capacity (Cp)</option>
+<option value="Specific heat capacity (Cv)">Specific heat capacity (Cv)</option>
+<option value="Thermal conductivity">Thermal conductivity</option>
+<option value="Thermal decomposition">Thermal decomposition </option>
+<option value="Thermal diffusivity">Thermal diffusivity</option>
+<option value="Volume expansion coefficient">Volume expansion coefficient</option>
+</optgroup>
+<optgroup label="Physicochemical property">
+<option value="Contact angle">Contact angle</option>
+<option value="Gas diffusion coefficient (D)">Gas diffusion coefficient (D)</option>
+<option value="Gas permeability coefficient (P)">Gas permeability coefficient (P)</option>
+<option value="Gas solubility coefficient (S)">Gas solubility coefficient (S)</option>
+<option value="Hansen parameter delta-d(dispersive component)">Hansen parameter delta-d(dispersive component)</option>
+<option value="Hansen parameter delta-h(hydrogen bonding component)">Hansen parameter delta-h(hydrogen bonding component)</option>
+<option value="Hansen parameter delta-p(polar component)">Hansen parameter delta-p(polar component)</option>
+<option value="Interfacial tension">Interfacial tension</option>
+<option value="Solubility parameter">Solubility parameter</option>
+<option value="Surface tension">Surface tension</option>
+<option value="Water absorption">Water absorption</option>
+<option value="Water vapor transmission">Water vapor transmission</option>
+</optgroup>
+<optgroup label="Dilute solution property">
+<option value="Diffusion coefficient">Diffusion coefficient</option>
+<option value="Intrinsic viscosity [eta]">Intrinsic viscosity [eta]</option>
+<option value="Radius of gyration">Radius of gyration</option>
+<option value="Non solvent">Non solvent</option>
+<option value="Second virial coefficient">Second virial coefficient</option>
+<option value="Sedimentation coefficient">Sedimentation coefficient</option>
+</optgroup>
+<optgroup label="Tensile property">
+<option value="Dynamic tensile properties">Dynamic tensile properties</option>
+<option value="Elongation at break">Elongation at break</option>
+<option value="Elongation at yield">Elongation at yield</option>
+<option value="Fiber tensile modulus">Fiber tensile modulus</option>
+<option value="Fiber tensile stress (strength) at break">Fiber tensile stress(strength) at break</option>
+<option value="Tensile modulus">Tensile modulus</option>
+<option value="Tensile stress(strength) at break">Tensile stress(strength) at break</option>
+<option value="Tensile stress(strength) at yield">Tensile stress(strength) at yield</option>
+</optgroup>
+<optgroup label="Impact strength">
+<option value="Charpy impact">Charpy impact</option>
+<option value="Izod impact">Izod impact</option>
+</optgroup>
+<optgroup label="Hardness">
+<option value="Rockwell hardness">Rockwell hardness</option>
+<option value="Shore hardness">Shore hardness</option>
+</optgroup>
+<optgroup label="Electrical property">
+<option value="Dielectric breakdown voltage">Dielectric breakdown voltage</option>
+<option value="Dielectric const.(DC)">Dielectric const.(DC)</option>
+<option value="Dielectric dispersion">Dielectric dispersion</option>
+<option value="Electric_conductivity">Electric conductivity</option>
+<option value="Surface resistivity">Surface resistivity</option>
+<option value="Volume resistivity">Volume resistivity</option>
+</optgroup>
+<optgroup label="Structural property">
+<option value="Formula weight(FW)">Formula weight(FW)</option>
+</optgroup>
+                    </select >
+                  </td>
+                  <td class="condition_noneborder_bg">Range</td>
+                  <td class="condition_noneborder_bg">&nbsp;&nbsp;min:</td>
+                  <td class="condition_noneborder_bg"><input id="p_prop2_min" name="p_prop2_min" onchange="change_property_2()"></td>
+                  <td class="condition_noneborder_bg">&nbsp;max:</td>
+                  <td class="condition_noneborder_bg"><input id="p_prop2_max" name="p_prop2_max" onchange="change_property_2()"></td>
+                </tr>
+              </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="condition_bg" height="25">
+              <table>
+              <tbody>
+                <tr>
+                  <td class="condition_noneborder_bg" width="230"><b>Polymer Class:</b></td>
+                  <td class="small_condition_noneborder_bg">
+                    <select id="class" name="p_class" onchange="change_3();">
+<option value="not specified" selected="" > not specified </option>
+<option value="polyacrylics"> polyacrylics </option>
+<option value="polyamides"> polyamides </option>
+<option value="polyanhydrides"> polyanhydrides </option>
+<option value="polycarbonates"> polycarbonates </option>
+<option value="polydienes"> polydienes </option>
+<option value="polyesters "> polyesters </option>
+<option value="polyhalo-olefins"> polyhalo-olefins </option>
+<option value="polyimides "> polyimides </option>
+<option value="polyimines "> polyimines </option>
+<option value="polyketones"> polyketones </option>
+<option value="polyolefins "> polyolefins </option>
+<option value="polyoxides"> polyoxides </option>
+<option value="polyphenylenes"> polyphenylenes </option>
+<option value="polyphosphazenes"> polyphosphazenes </option>
+<option value="polysiloxanes"> polysiloxanes </option>
+<option value="polystyrenes"> polystyrenes </option>
+<option value="polysulfides"> polysulfides </option>
+<option value="polysulfones"> polysulfones </option>
+<option value="polyurethanes"> polyurethanes </option>
+<option value="polyureas"> polyureas </option>
+<option value="polyvinyls "> polyvinyls </option>
+<option value="Copolymer"> copolymer </option>
+<option value="blend"> polymer blend </option>
+<option value="other"> other polymers </option>
+                    </select>
+                  </td>
+                  <td class="small_condition_noneborder_bg">&nbsp;<a href="https://polymer.nims.go.jp/PoLyInfo/guide/en/term_polymer.html#chap06" target="_blank">[details]</a></td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+<br>
+              Search method:<br>
+              1. Choose a objective property from the pull-down menu of [X:Property] and [Y:Property], respectively.<br>
+              2. If you have a wanted Polymer class, you can choose it from the pull-down menu of [Polymer Class].<br>
+              3. And if you have a wanted data range, you can choose it by clicking the data range on the graph.<br>
+              4. Finally click [Search] button.
+        <br>
+      </td>
+    </tr>
+    <td>
+      <input type="submit" name="plot" value="Search">
+    </td>
+    </tbody>
+</table>
+</form>
+<form action="/c" method="post">
+    {% if content !=False %}
+    <table cellpadding="0" cellspacing="0" align="center" width="960px">
+      <tr>
+        <td>
+         <input id="compare1" name="compare1" type="text" maxlength="8" list="polymerNamelist" onchange="comparison()">
+        </td>
+        <br></br>
+         <datalist id="polymerNamelist">
+                {% for item in content %}
+                   <option>{{ item }}</option>
+                {% endfor %}
+         </datalist>
+      </tr>
+    <tr>
+        <td>
+         <button type='button' id="add_1" onclick="add()" >Add</button>
+         <button type='button' id="remove_1" onclick="remove()" disabled="disabled" >Remove</button>
+         <button id="compare" type="submit" onclick="window.location.href='http://127.0.0.1:5000/c'" disabled="disabled">Compare</button>
+        </td>
+    </tr>
+    </table>
+    {% endif %}
+</form >
+      {% if Table !=False %}
+      <table align="center">
+           <td>
+               <iframe src="/static/img/basic-line.html" width="960px" height="600px"></iframe>
+           </td>
+      </table>
+      {% endif %}
+</body>
+</html>
+<script type="text/javascript">
+    var x=1;
+    var add = function() {
+                x++;
+                var sel = document.getElementById("compare1");
+                cloned= '<input id="compare'+x+'" name="compare'+x+'" type="text" maxLength="8" list="polymerNamelist">'
+                sel.insertAdjacentHTML('afterend',cloned);
+                buttoncontrol();
+           }
+            var remove = function() {
+                var box=document.getElementById("compare"+x);
+                box.remove();
+                x--;
+                buttoncontrol();
+            }
+            var buttoncontrol=function(){
+            if(x==1){
+                    document.getElementById("remove_1").disabled=true;
+                    document.getElementById("add_1").disabled=false;
+            }
+                if(x==4){
+                    document.getElementById("remove_1").disabled=false;
+                    document.getElementById("add_1").disabled=true;
+            }
+                if(x>1 && x<4){
+                    document.getElementById("add_1").disabled=false;
+                    document.getElementById("remove_1").disabled=false;
+            }
+    }
+    var comparison=function(){
+       if(document.getElementById("compare1").value!=''){
+           document.getElementById("compare").disabled=false;
+       }
+    }
+    function change_1()
+    {
+        document.cookie="x_axis="+document.getElementById("x_axis").value;
+    }
+    function change_2()
+    {
+        document.cookie="y_axis="+document.getElementById("y_axis").value;
+    }
+    function change_3()
+    {
+        document.cookie="class="+document.getElementById("class").value;
+    }
+     function change_property_1()
+    {
+        document.cookie="p_prop1_min="+document.getElementById("p_prop1_min").value;
+        document.cookie="p_prop1_max="+document.getElementById("p_prop1_max").value;
+    }
+    function change_property_2()
+    {
+        document.cookie="p_prop2_min="+document.getElementById("p_prop2_min").value;
+        document.cookie="p_prop2_max="+document.getElementById("p_prop2_max").value;
+    }
+    function getCookie(name){
+    var strcookie = document.cookie;//获取cookie字符串
+    var arrcookie = strcookie.split("; ");//分割
+    //遍历匹配
+    for ( var i = 0; i < arrcookie.length; i++) {
+        var arr = arrcookie[i].split("=");
+        if (arr[0] === name){
+            return arr[1];
+        }
+    }
+    return "";
+}
+ window.onload=function(){
+        if(getCookie("x_axis")!==""){
+            document.getElementById("x_axis").value=getCookie("x_axis");
+        }
+        if(getCookie("y_axis")!==""){
+            document.getElementById("y_axis").value=getCookie("y_axis");
+        }
+        if(getCookie("class")!==""){
+            document.getElementById("class").value=getCookie("class");
+        }
+        if(getCookie("p_prop1_min")!==""){
+            document.getElementById("p_prop1_min").value=getCookie("p_prop1_min");
+        }
+        if(getCookie("p_prop1_max")!==""){
+            document.getElementById("p_prop1_max").value=getCookie("p_prop1_max");
+        }
+        if(getCookie("p_prop2_min")!==""){
+            document.getElementById("p_prop2_min").value=getCookie("p_prop2_min");
+        }
+        if(getCookie("p_prop2_max")!==""){
+            document.getElementById("p_prop2_max").value=getCookie("p_prop2_max");
+        }
+    }
+</script>

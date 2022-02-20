@@ -1,0 +1,105 @@
+{% macro page(data,url) %}
+
+{% if data %}
+
+<ul class="pagination pagination-sm no-margin pull-right">
+
+    <li><a href="{{ url_for(url,page=1) }}">首页</a></li>
+
+    {% if data.has_prev %}
+
+    <li><a href="{{ url_for(url,page=data.prev_num) }}">上一页</a></li>
+
+    {% else %}
+
+    <li><a href="#">上一页</a></li>
+
+    {% endif %}
+
+    {% if data.pages>5%}
+
+    {% if data.page <4 %}
+
+    {% for i in range(1,4) %}
+
+    {% if i == data.page %}
+
+    <li><a href="#">{{ i }}</a></li>
+
+    {% else %}
+
+    <li><a href="{{ url_for(url,page=i) }}">{{ i }}</a></li>
+
+    {%endif%}
+
+    {% endfor %}
+
+    {%elif (data.pages-data.page)<3%}
+
+    {% for i in range(data.pages-3,data.pages+1) %}
+
+    {% if i == data.page %}
+
+    <li><a href="#">{{ i }}</a></li>
+
+    {% else %}
+
+    <li><a href="{{ url_for(url,page=i) }}">{{ i }}</a></li>
+
+    {%endif%}
+
+    {% endfor %}
+
+    {%else%}
+
+    {% for i in range(data.page-3,data.page+4) %}
+
+    {% if i == data.page %}
+
+    <li><a href="#">{{ i }}</a></li>
+
+    {% else %}
+
+    <li><a href="{{ url_for(url,page=i) }}">{{ i }}</a></li>
+
+    {%endif%}
+
+    {% endfor %}
+
+    {%endif%}
+
+    {%else%}
+
+    {% for v in data.iter_pages()%}
+
+    {% if v == data.page %}
+
+    <li><a href="#">{{ v }}</a></li>
+
+    {% else %}
+
+    <li><a href="{{ url_for(url,page=v) }}">{{ v }}</a></li>
+
+    {% endif%}
+
+    {% endfor %}
+
+    {% endif%}
+
+    {% if data.has_next %}
+
+    <li><a href="{{ url_for(url,page=data.next_num) }}">下一页</a></li>
+
+    {% else %}
+
+    <li><a href="#">下一页</a></li>
+
+    {% endif %}
+
+    <li><a href="{{ url_for(url,page=data.pages) }}">尾页{{data.pages}}</a></li>
+
+</ul>
+
+{% endif %}
+
+{% endmacro  %}
